@@ -1,4 +1,13 @@
 #!/usr/bin/python
+"""
+Files renamer
+Rename all files in directory by pattern
+usage:
+# simple replace
+>>> main.py for_replace to_replace
+# replace with regex
+>>> main.py for_replace to_replace* -rx
+"""
 
 import argparse
 from renamer import FileRenamer
