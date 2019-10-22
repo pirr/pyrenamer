@@ -5,12 +5,12 @@ import re
 
 class FileRenamer(object):
 
-    def __init__(self, replace: str, to: str, with_regex: bool) -> None:
+    def __init__(self, replace, to, with_regex):
         self.replace = replace
         self.to = to
         self.with_regex = with_regex
 
-    def __call__(self) -> None:
+    def __call__(self):
         cwd = os.getcwd()
         if self.with_regex:
             self.rx_patt = re.compile(self.replace)
