@@ -4,9 +4,9 @@ Files renamer
 Rename all files in directory by pattern
 usage:
 # simple replace
->>> main.py for_replace to_replace
+>>> rname for_replace to_replace
 # replace with regex
->>> main.py for_replace to_replace* -rx
+>>> rname for_replace to_replace* -rx
 """
 
 import argparse
